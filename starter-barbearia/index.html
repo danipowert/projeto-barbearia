@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Barbearia Clássica — Cortes clássicos e modernos para o homem moderno. Site acessível com HTML semântico, CSS e JavaScript." />
+  <title>Juninho Cortes | Cortes clássicos e modernos para o homem moderno</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Barbearia Clássica - Página inicial">
+       <img src="imagens/logo.png" alt="Logo Barbearia Clássica" class="logo-img" />
+        <span>Barbearia Clássica</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="opçoes de cortes">Opções de cortes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="carousel-container">
+
+    <!-- Slide 1 -->
+    <div class="slide fade">
+        <img src="imagens/img1.png" alt="corte 1">
+        <div class="caption">Corte + Barba por R$ 45,00 — Oferta Limitada!</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide fade">
+        <img src="imagens/img2.png" alt="corte 2">
+        <div class="caption">Hidratação Capilar + Corte por R$ 60,00</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide fade">
+        <img src="imagens/img3.png" alt="corte 3">
+        <div class="caption">Agende Online e ganhe 10% de desconto</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide fade">
+        <img src="imagens/img4.png" alt="corte 4">
+        <div class="caption">Serviço de Massagem + Corte por R$ 70,00</div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <img src="imagens/logo.png" alt="Logo Barbearia Clássica" class="logo-banner" />
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<!-- Pontos indicativos -->
+<div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container">
+        <p class="hero-tagline">Cortes clássicos e modernos para o homem moderno</p>
+        <a href="#menu" class="btn btn-primary">Ver as Opções</a>
+      </div>
+    </section>
+
+    <section id="sobre" aria-labelledby="sobre-titulo" class="section">
+      <div class="container">
+        <h2 id="sobre-titulo">Sobre nós</h2>
+        <p>Aberta em 06/02/2024 com a intuição de elevar a autoestima de nossos clientes. E com o intuito de mostrar os
+          cortes diferenciados que você só vê aqui na Barbearia do Juninho!</p>
+      </div>
+    </section>
+
+    <section id="menu" aria-labelledby="menu-titulo" class="section section-alt">
+      <div class="container">
+        <h2 id="menu-titulo"><Menu></h2>
+        <p class="section-intro">Escolha seus favoritos. Use os botões para adicionar ao pedido.</p>
+        <div class="cards-grid" role="list">
+          <article class="card">
+            <div class="card-emoji" aria-hidden="true">💈</div>
+            <h3>Corte Social</h3>
+            <p>Aquele corte Social com direito á um Freestyle</p>
+            <p class="price">R$ <span>30,00</span></p>
+            <button type="button" class="btn-add" aria-label="Adicionar Corte Tradicional ao pedido">Adicionar</button>
+          </article>
+          <article class="card">
+            <div class="card-emoji" aria-hidden="true">💈</div>
+            <h3>Corte + Barba</h3>
+            <p>Corte social junto com aparamento da barba ou até raspagem.</p>
+            <p class="price">R$ <span>35,00</span></p>
+            <button type="button" class="btn-add" aria-label="Adicionar Corte + Barba ao pedido">Adicionar</button>
+          </article>
+          <article class="card">
+            <div class="card-emoji" aria-hidden="true">💈</div>
+            <h3>Barba Completa</h3>
+            <p>Escolha do cliente - Somente aparar ou raspar completo.</p>
+            <p class="price">R$ <span>30,00</span></p>
+            <button type="button" class="btn-add" aria-label="Adicionar Barba Completa ao pedido">Adicionar</button>
+          </article>
+          <article class="card">
+            <div class="card-emoji" aria-hidden="true">💈</div>
+            <h3>Pigmentação</h3>
+            <p>Feita nas Sobrancelha, cabelo, pezinho e barba.</p>
+            <p class="price">R$ <span>60,00</span></p>
+            <button type="button" class="btn-add" aria-label="Adicionar Pigmentação ao pedido">Adicionar</button>
+          </article>
+          <article class="card">
+            <div class="card-emoji" aria-hidden="true">💈</div>
+            <h3>Sobrancelha</h3>
+            <p>Desing e risquinho.</p>
+            <p class="price">R$ <span>10,00</span></p>
+            <button type="button" class="btn-add" aria-label="Adicionar Sobrancelha ao pedido">Adicionar</button>
+          </article>
+          <article class="card">
+            <div class="card-emoji" aria-hidden="true">💈</div>
+            <h3>Combo Completo</h3>
+            <p>Corte social. Desing de sobrancelha, Risquinho, Barba, Pigmentação e Freestyle. Com direito à 1(Uma) Cerveja grátis!</p>
+            <p class="price">R$ <span>95,00</span></p>
+            <button type="button" class="btn-add" aria-label="Adicionar Combo Completo ao pedido">Adicionar</button>
+          </article>
+        </div>
+        <div class="pedido-box" role="status" aria-live="polite" aria-atomic="true">
+          <strong>Pedido:</strong> <span id="contador-pedido">0</span> item(ns)
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" aria-labelledby="contato-titulo" class="section">
+      <div class="container">
+        <h2 id="contato-titulo">Fale conosco</h2>
+        <form class="form" novalidate>
+          <div class="form-row">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required aria-required="true" />
+          </div>
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required aria-required="true" />
+          </div>
+          <div class="form-row">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required aria-required="true"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <p class="form-feedback" role="alert" aria-live="assertive" id="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="ano"></span> Barbearia Clássica. Projeto educacional — Web Design Híbrido.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
